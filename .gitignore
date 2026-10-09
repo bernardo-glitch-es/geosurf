@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+examples/synthetic_site/
+output/
+*.egg-info/
+.venv/
+# project / client data – keep out of the repo
+data/
+*.laz
+*.las
+*.ags
+*.xlsx
+!examples/**/*.xlsx
