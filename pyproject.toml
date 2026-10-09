@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geosurf"
+version = "0.1.0"
+description = "LiDAR + borehole/geotechnical data -> GemPy implicit geological model -> surfaces for CAD/GIS"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "gempy>=2025.1",
+  "numpy", "pandas", "scipy", "scikit-image",
+  "laspy[lazrs]>=2.5",
+  "rasterio>=1.3",
+  "ezdxf>=1.1",
+  "openpyxl",
+  "plotly>=5.20",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.40"]
+dev = ["pytest", "playwright"]
+
+[project.scripts]
+geosurf = "geosurf.cli:main"
+
+[tool.setuptools]
+packages = ["geosurf"]
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning"]

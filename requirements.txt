@@ -1,0 +1,11 @@
+gempy>=2025.1
+numpy
+pandas
+scipy
+scikit-image
+laspy[lazrs]>=2.5
+rasterio>=1.3
+ezdxf>=1.1
+openpyxl
+plotly>=5.20
+streamlit>=1.40
