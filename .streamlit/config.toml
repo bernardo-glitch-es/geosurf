@@ -1,0 +1,5 @@
+[server]
+maxUploadSize = 1000   # MB – LiDAR LAZ files can be large
+
+[theme]
+base = "light"
